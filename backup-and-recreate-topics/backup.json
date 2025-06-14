@@ -1,0 +1,29 @@
+{
+  "topics": [
+    {
+      "name": "test1",
+      "partition_count": 1,
+      "replication_factor": 3,
+      "configs": {
+        "min.insync.replicas": "2"
+      }
+    },
+    {
+      "name": "test2",
+      "partition_count": 1,
+      "replication_factor": 3,
+      "configs": {
+        "min.insync.replicas": "2"
+      }
+    },
+    {
+      "name": "test3",
+      "partition_count": 1,
+      "replication_factor": 3,
+      "configs": {
+        "min.insync.replicas": "2",
+        "cleanup.policy": "compact"
+      }
+    }
+  ]
+}
