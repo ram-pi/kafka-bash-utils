@@ -9,6 +9,10 @@ Scripts for backing up and recreating Kafka topics with their configurations:
 - `backup_topics.sh`: Creates a backup of topic configurations in JSON format
 - `restore_topics.sh`: Restores topics from a backup file
 
+### [Topic Cleanup](./topic-cleanup/)
+Scripts for cleaning up and deleting Kafka topics:
+- `delete_topics.sh`: Deletes topics from a list specified in a file
+
 ### [Schema Registry Cleanup](./cloud-schema-registry-cleanup/)
 Scripts for managing and cleaning up Schema Registry:
 - `schema_registry_cleanup.sh`: Interactive script for reviewing and removing unused schemas
@@ -43,6 +47,8 @@ Most scripts support the following common arguments:
 ├── backup-and-recreate-topics/    # Topic backup and recreation scripts
 │   ├── backup_topics.sh
 │   └── restore_topics.sh
+├── topic-cleanup/                 # Topic cleanup and deletion scripts
+│   └── delete_topics.sh
 ├── cloud-schema-registry-cleanup/  # Schema Registry management scripts
 │   └── schema_registry_cleanup.sh
 ├── restore-kafka-acls/            # ACL management scripts

@@ -6,6 +6,12 @@ DRY_RUN=false
 BOOTSTRAP_SERVER="localhost:9092"
 COMMAND_CONFIG=""
 
+# Check if kafka-topics.sh is available
+if ! command -v kafka-topics.sh &> /dev/null; then
+    echo "Error: kafka-topics.sh is not available. Please ensure Kafka tools are installed and in your PATH"
+    exit 1
+fi
+
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
     case $1 in
